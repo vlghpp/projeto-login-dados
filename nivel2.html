@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon form.png" type="image/x-icon">
+    <style>
+        body {
+            background: rgb(95, 3, 252);
+            background: linear-gradient(315deg, rgba(95, 3, 252, 1) 27%, rgba(114, 18, 251, 1) 47%, rgba(150, 47, 249, 1) 60%, rgba(215, 47, 249, 1) 100%);
+            background-repeat: no-repeat;
+            height: 97.5vh;
+            width: 90vw;
+        }
+
+        main {
+            background-color: transparent;
+            border: 1px solid white;
+            box-shadow: 0px 0px 5px black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 100px;
+            width: 500px;
+            height: 200px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            text-align: center;
+            color: aquamarine;
+        }
+
+        label {
+            color: aqua;
+            font-size: 20px;
+        }
+
+        #inome {
+            font-size: 15px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+
+        #iemail {
+            font-size: 15px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+
+        #isenha {
+            font-size: 15px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+
+        #iusu {
+            font-size: 15px;
+            background-color: transparent;
+            border: 0;
+            color: white;
+        }
+
+        #ibotao {
+            width: 80px;
+            font-size: 15px;
+            background-color: blueviolet;
+            color: whitesmoke;
+            border-color: rgb(212, 212, 212);
+        }
+    </style>
+    <title>Desafio Form</title>
+</head>
+
+<body>
+    <main>
+        <h2>Cadastro-se aqui e agora!</h2>
+        <hr>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" id="inome" required placeholder="Insira seu nome">
+            </p>
+            <p>
+                <label for="iusu">Usuário:</label>
+                <input type="text" id="iusu"  autocomplete="username" placeholder="Insira seu usuário" required>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="Insira seu email"
+                    autocomplete="email">
+            </p>
+            <p>
+                <label for="isenha">Senha:</label>
+                <input type="password" name="senha" id="isenha" min="8" max="20" required placeholder="Insira sua senha">
+            </p>
+            <p>
+                <label for="ibotao"></label>
+                <input type="submit" id="ibotao" value="Enviar" onclick="enviar()">
+                </a>
+            </p>
+        </form>
+    </main>
+    <script src="nivel2.js"></script>
+</body>
+
+</html>
